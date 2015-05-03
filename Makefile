@@ -11,7 +11,7 @@ MAC_OSX_10_10_YOSEMITE_INSTALLER ?= iso/OS\ X\ Yosemite/Install\ OS\ X\ Yosemite
 MAC_OSX_10_7_LION_BOOT_DMG ?= OSX_InstallESD_10.7.5_11G63.dmg
 MAC_OSX_10_8_MOUNTAIN_LION_BOOT_DMG ?= OSX_InstallESD_10.8.5_12F45.dmg
 MAC_OSX_10_9_MAVERICKS_BOOT_DMG ?= OSX_InstallESD_10.9_13A603.dmg
-MAC_OSX_10_10_YOSEMITE_BOOT_DMG ?= OSX_InstallESD_10.10_14A389.dmg
+MAC_OSX_10_10_YOSEMITE_BOOT_DMG ?= OSX_InstallESD_10.10.3_14D136.dmg
 
 # Possible values for CM: (nocm | chef | chefdk | salt | puppet)
 CM ?= nocm
