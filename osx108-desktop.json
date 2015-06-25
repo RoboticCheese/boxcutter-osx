@@ -35,7 +35,10 @@
       "hpet0.present": "TRUE",
       "ich7m.present": "TRUE",
       "ehci.present": "TRUE",
-      "usb.present": "TRUE"
+      "usb.present": "TRUE",
+      "sound.present": "TRUE",
+      "sound.autodetect": "TRUE",
+      "sound.virtualdev": "hdaudio"
     }
   },
   {
@@ -56,6 +59,7 @@
     "shutdown_command": "echo '{{ user `ssh_username` }}'|sudo -S shutdown -h now",
     "vboxmanage": [
       ["modifyvm", "{{.Name}}", "--audiocontroller", "hda"],
+      ["modifyvm", "{{.Name}}", "--audio", "coreaudio"],
       ["modifyvm", "{{.Name}}", "--boot1", "dvd"],
       ["modifyvm", "{{.Name}}", "--boot2", "disk"],
       ["modifyvm", "{{.Name}}", "--chipset", "ich9"],
